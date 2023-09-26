@@ -18,7 +18,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("hussan"),
+          title: Text("huss"),
+
         ),
       ),
     );
