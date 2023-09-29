@@ -1,27 +1,23 @@
+import 'package:app12/main.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("huss"),
-
-        ),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("Title"),
+          ),
+          body: Center(heightFactor: 15,
+            child:
+          Text("Body" ,style: TextStyle(fontSize: 20),),)
+        ));
   }
 }
